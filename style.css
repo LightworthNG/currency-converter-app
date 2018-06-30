@@ -1,3 +1,11 @@
+/*
+
+Project : ALC-7DaysChallenge - CurrencyConverterApp;
+Submitted By: Chibueze, Samuel Eleanya;
+Slack Handle: @LightworthNG;
+
+*/
+
 *{
 	box-sizing: border-box;
 	font-family: heveltica, verdana, sans-serif ;
@@ -38,12 +46,21 @@ form button{
 	text-align: center;
 	font-size: 18px ;
 	font-weight: 300 ;
+	width: 40% ;
+	display: block;
+}
+form button:hover{
+	color:  #676 ;
+	background: #f9f9f9 ;
+	border: 1px solid #676 ;
+	cursor: pointer;
 }
 
 form #result{
 	margin: auto;
 	text-align: center;
 	width: 60% ;
+	padding: 10px 15px ;
 	min-height: 35px ;
 	color: #f7f7f7 ;
 	background: #555 ;

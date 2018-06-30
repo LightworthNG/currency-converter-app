@@ -39,8 +39,8 @@ if ('serviceWorker' in navigator) {
 				return networkResponse.json() ;
 			}).then(function(data){
 				console.log('data=> conFactor', Object.keys(data).sort()) ;
-				var conFactor = data[query] ;
-				var conResult = (amt * conFactor).toFixed(3) ;
+				let conFactor = data[query] ;
+				let conResult = (amt * conFactor).toFixed(3) ;
 				document.querySelector('#result').innerText = `RESULT : ${conResult}` ;
 
 				//log conversion to DB
@@ -57,25 +57,7 @@ if ('serviceWorker' in navigator) {
 
 	function get_all_currencies(){
 		
-/*
-		const VERSION = 'V1' ;
-		const CACHE_NAME = `CONVERTER-${VERSION}`;
 
-		// check in caches
-		caches.open(CACHE_NAME)
-			.then(function(cache){
-				return caches.matchAll(e.request)
-				.then(function(res){
-					if (res) {
-						console.log('[SW-converter] found a response in cache...')
-						return res ;
-					}
-				})
-			})
-				.catch(function(e){
-					// fetch from network
-					console.log('[SW-converter] fetching Response from network => all_currencies ') ;
-*/
 					fetch(url)
 					.then( networkResponse => {
 						console.log('found networkResponse => all_currencies ') ;
@@ -111,11 +93,5 @@ if ('serviceWorker' in navigator) {
 						})
 					})
 
-/*
-					.catch(function(e){
-						console.log('error fetching currencies from network => all_currencies', e) ;
-					}) ;
-				})
-*/
 
 	}

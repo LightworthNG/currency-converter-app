@@ -6,8 +6,8 @@ const URLs = [
 	'./',
 	'./index.html',
 	'./style.css',
-	'idb.js',
-	'currency-converter-app.js' ] ;
+	'./idb.js',
+	'./currency-converter-app.js' ] ;
 
 	
 const VERSION = 'V1' ;
